@@ -10,6 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <nav
@@ -32,7 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Dashboard</a>
+              <a class="nav-link" href="#"> </i> Dashboard</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sponsorizzazione</a>
@@ -46,17 +47,22 @@
               <a class="nav-link" href="#">Nuovo prodotto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Clienti</a>
+              <a class="nav-link" href="#">Clienti</i></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    
     <!-- SIDEBAR -->
 
+<div class="container-fluid d-flex p-0">
+
+
     <div
-      class="d-flex d-none d-sm-none d-md-block flex-column flex-shrink-0 p-3 text-white bg-dark"
-      style="width: 280px; height: 100vh"
+      class="d-flex d-none d-sm-none d-md-block flex-column p-3 text-white bg-dark"
+      style="height: 100vh"
     >
       <a
         href=""
@@ -74,7 +80,8 @@
             <svg class="bi me-2" width="16" height="16">
               <use xlink:href="#home"></use>
             </svg>
-            Dashboard
+            <i class="fas fa-house mx-1"></i>
+           Dashboard
           </a>
         </li>
         <li>
@@ -82,6 +89,7 @@
             <svg class="bi me-2" width="16" height="16">
               <use xlink:href="#speedometer2"></use>
             </svg>
+            <i class="fas fa-chart-line mx-1"></i>
             Sponsorizzazione
           </a>
         </li>
@@ -90,6 +98,7 @@
             <svg class="bi me-2" width="16" height="16">
               <use xlink:href="#table"></use>
             </svg>
+            <i class="fas fa-box-archive mx-1"></i>
             Prodotti
           </a>
         </li>
@@ -98,6 +107,7 @@
             <svg class="bi me-2" width="16" height="16">
               <use xlink:href="#grid"></use>
             </svg>
+            <i class="fas fa-plus mx-1"></i>
             Nuovo prodotto
           </a>
         </li>
@@ -106,12 +116,13 @@
             <svg class="bi me-2" width="16" height="16">
               <use xlink:href="#people-circle"></use>
             </svg>
+            <i class="fas fa-user mx-1"></i>
             Clienti
           </a>
         </li>
       </ul>
-      <hr />
-      <div class="dropdown">
+
+      <div class="dropdown mt-4 p-3">
         <a
           href="#"
           class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
@@ -140,6 +151,43 @@
         </ul>
       </div>
     </div>
+
+
+    <!-- RIGHT PART -->
+<div class="p-3 flex-grow-1">
+    <div class="d-flex justify-content-between">
+        <h3 class="">
+            10 prodotti trovati
+        </h3>
+        <div class="btn-group">
+            <a href="#" class="btn btn-outline-secondary">Esporta</a>
+            <a href="#" class="btn btn-outline-secondary">Nuovo</a>
+        </div>
+      
+    </div>
+    <hr>
+    <div class="d-flex justify-content-between">
+        <div>
+            <span>Nome</span>
+        </div>
+        <div class="d-flex justify-content-between">
+            <span class="px-3 d-none d-sm-block">Prezzo</span>
+            <span class="px-3 d-none d-sm-block">Stato</span>
+            <span class="px-3 d-none d-sm-block">Azioni</span>
+        </div>
+
+    </div>
+<hr>
+   
+</div>
+
+</div>
+
+  
+
+
+
+
     <!-- JSLINK -->
 
     <script
